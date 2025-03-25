@@ -20,7 +20,7 @@ class AuthController extends Controller
         'name' => ['required', 'string', 'max:255'],
         'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
         'password' => ['required', 'string', 'min:8', 'confirmed'],
-        'user_photo' => 'required|image|mimes:jpeg,png,jpg|max:2048',
+        'user_photo' => 'required|image|mimes:jpeg,png,jpg|max:20480',
         // Remove role_id from public registration
     ]);
 
